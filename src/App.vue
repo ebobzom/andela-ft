@@ -1,5 +1,5 @@
 <template>
-	<div class="home" role="aplication">
+	<div class="home" role="article">
 		<div class="form" role="contentinfo">
 			<h1>COVID19 IMPACT ESTIMATOR</h1>
 			<form>
