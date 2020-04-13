@@ -1,6 +1,6 @@
 <template>
 	<div class="home" role="aplication">
-		<div class="form" role='contentinfo'>
+		<div class="form" role="contentinfo">
 			<h1>COVID19 IMPACT ESTIMATOR</h1>
 			<form>
 
@@ -11,6 +11,7 @@
 					name="data-population"
 					data-population=""
 					type="number"
+          aria-label="population"
 					placeholder="Enter population size"
 				/>
 
@@ -21,11 +22,12 @@
 					name="data-time-to-elapse"
 					data-time-to-elapse=""
 					type="number"
+          aria-label="time-period"
 					placeholder="Enter time period"
 				/>
 
 				<label for="time-period-type">Type of time period</label>
-				<select data-period-type name="periodType" id="periodType">
+				<select data-period-type name="periodType" id="periodType" aria-label="period-type">
               <option value="days">Days</option>
               <option value="weeks">Weeks</option>
               <option value="months">Months</option>
@@ -38,6 +40,7 @@
 					name="data-reported-cases"
 					data-reported-cases=""
 					type="number"
+          aria-label="reported-cases"
 					placeholder="Enter number of reported cases"
 				/>
 
@@ -49,12 +52,14 @@
 					name="data-total-hospital-beds"
 					data-total-hospital-beds=""
 					type="number"
+          aria-label="hospital-beds"
 					placeholder="Enter number of hospital beds"
 				/>
 
 				<button
 					for="data-go-estimate"
 					name="data-go-estimate"
+          aria-label="result"
 					data-go-estimate=""
 					type="submit"
 				>
